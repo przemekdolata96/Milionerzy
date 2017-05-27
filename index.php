@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="pl">
 
+	<?php
+		
+	?>
+	
+	<script type="text/javascript">
+		
+	</script>
 <head>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +18,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="fontello-696ac1d6/css/fontello.css">
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+
 </head>
 
 <body>
@@ -21,7 +35,7 @@
 			</div>
 				
 			<div class="container hidden-xs">
-				<div class="headdesk"><span onclick="insertQuestion()">START</span><span>RESTART</span></div>
+				<div class="headdesk"><span id="startButton" >START</span><span>RESTART</span></div><!-- <div class="headdesk"><span id="startButton" onclick="insertQuestion(question,answerA,answerB,answerC,answerD)">START</span><span>RESTART</span></div> -->
 			</div>
 
 			<div class="container hidden-lg hidden-md hidden-sm ">
@@ -44,7 +58,8 @@
 						<div class="container leftSideHigh col-lg-9 col-md-9 col-sm-9">
 				
 							<div id="question" class="question">
-								Który klub piłkarski najczęsciej wygrywał ligę mistrzów
+
+								
 							</div>
 						</div>
 				
@@ -110,5 +125,5 @@
 		</div>			
 	</footer>
 </body>
-<script type="text/javascript" src="scripts.js"></script>
+
 </html>
