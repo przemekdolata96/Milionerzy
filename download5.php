@@ -3,7 +3,8 @@
 
 	require_once("dbconnect.php");
 
-	$query_container="SELECT * FROM pytania WHERE questionNumber=5";
+	$random=0;//second parameter is depends on nuber of question in DB
+	$query_container="SELECT * FROM pytania WHERE questionNumber=5 AND random=$random";
 	/*$query_add="INSERT INTO pytania (question,answerA,answerB,answerC,answerD,correct) VALUES ('Najlepszy język programowania to:','Java','C++','Python','C#','a')";
 */
 //add to database

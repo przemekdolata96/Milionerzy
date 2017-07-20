@@ -1,7 +1,7 @@
 body
 {
 	margin: 0 !important; 
-	color: #ffffff;
+	color: #000000;
 	font-family: 'Space Mono', monospace;
 }
 
@@ -36,7 +36,7 @@ background-image: -webkit-radial-gradient(center, ellipse farthest-side, #035ABB
 /* W3C Markup */ 
 background-image: radial-gradient(ellipse farthest-side at center, #035ABB 0%, #0350A6 46%, #0351A8 50%, #034DA1 53%, #023F82 76%, #022F61 87%, #1B1B1B 100%);
 	padding: 10px;
-	margin-top: 10px;
+	margin-top: 100px;
 	margin-bottom: 10px;
 	margin-right: auto;
 	margin-left: auto;
@@ -75,6 +75,7 @@ background-image: linear-gradient(to bottom, #0B1417 0%, #0353AD 46%, #035ABB 50
 
 .answer:hover
 {
+	color: #ffffff;
 	/* IE10+ */ 
 background-image: -ms-radial-gradient(center, ellipse farthest-side, #EB7409 0%, #C76207 46%, #BD5D07 50%, #B35807 53%, #9C4D05 76%, #854205 87%, #5E2E04 100%);
 
@@ -93,6 +94,79 @@ background-image: -webkit-radial-gradient(center, ellipse farthest-side, #EB7409
 /* W3C Markup */ 
 background-image: radial-gradient(ellipse farthest-side at center, #EB7409 0%, #C76207 46%, #BD5D07 50%, #B35807 53%, #9C4D05 76%, #854205 87%, #5E2E04 100%);
 	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+}
+
+/* .answer::before { 
+    content: "Read this: ";
+} */
+
+.answerhover
+{
+	color: #ffffff;
+	/* IE10+ */ 
+background-image: -ms-radial-gradient(center, ellipse farthest-side, #EB7409 0%, #C76207 46%, #BD5D07 50%, #B35807 53%, #9C4D05 76%, #854205 87%, #5E2E04 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center, ellipse farthest-side, #EB7409 0%, #C76207 46%, #BD5D07 50%, #B35807 53%, #9C4D05 76%, #854205 87%, #5E2E04 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center, ellipse farthest-side, #EB7409 0%, #C76207 46%, #BD5D07 50%, #B35807 53%, #9C4D05 76%, #854205 87%, #5E2E04 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center center, 0, center center, 258, color-stop(0, #EB7409), color-stop(46, #C76207), color-stop(50, #BD5D07), color-stop(53, #B35807), color-stop(76, #9C4D05), color-stop(87, #854205), color-stop(100, #5E2E04));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center, ellipse farthest-side, #EB7409 0%, #C76207 46%, #BD5D07 50%, #B35807 53%, #9C4D05 76%, #854205 87%, #5E2E04 100%);
+
+/* W3C Markup */ 
+background-image: radial-gradient(ellipse farthest-side at center, #EB7409 0%, #C76207 46%, #BD5D07 50%, #B35807 53%, #9C4D05 76%, #854205 87%, #5E2E04 100%);
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+}
+
+#answerA::before { 
+    content: "A. ";
+}
+#answerB::before { 
+    content: "B. ";
+}
+#answerC::before { 
+    content: "C. ";
+}
+#answerD::before { 
+    content: "D. ";
+}
+
+.goodanswer
+{
+	color: #ffffff;
+	/* IE10+ */ 
+background-image: -ms-radial-gradient(center, ellipse farthest-side, #1B8C18 0%, #21A81C 46%, #1F9C1A 50%, #1C8F19 53%, #1C8F19 76%, #197D14 87%, #136311 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center, ellipse farthest-side, #1B8C18 0%, #21A81C 46%, #1F9C1A 50%, #1C8F19 53%, #1C8F19 76%, #197D14 87%, #136311 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center, ellipse farthest-side, #1B8C18 0%, #21A81C 46%, #1F9C1A 50%, #1C8F19 53%, #1C8F19 76%, #197D14 87%, #136311 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center center, 0, center center, 258, color-stop(0, #1B8C18), color-stop(46, #21A81C), color-stop(50, #1F9C1A), color-stop(53, #1C8F19), color-stop(76, #1C8F19), color-stop(87, #197D14), color-stop(100, #136311));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center, ellipse farthest-side, #1B8C18 0%, #21A81C 46%, #1F9C1A 50%, #1C8F19 53%, #1C8F19 76%, #197D14 87%, #136311 100%);
+
+/* W3C Markup */ 
+background-image: radial-gradient(ellipse farthest-side at center, #1B8C18 0%, #21A81C 46%, #1F9C1A 50%, #1C8F19 53%, #1C8F19 76%, #197D14 87%, #136311 100%);
+padding: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
@@ -136,7 +210,7 @@ background-image: radial-gradient(ellipse closest-corner at center, #0348A1 0%, 
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-weight: 700;
-	color: #ffffff;
+	color: #dddddd;
 	letter-spacing: 2px;
 }
 
@@ -181,7 +255,7 @@ span
 {
 	
 	font-size: 28px;
-	margin-left: 180px;
+	margin-left: 30px;
 	font-family: 'Space Mono', monospace;
 	font-weight: 700;
 	color: #ffffff;
@@ -195,7 +269,7 @@ span:hover
 {
 	
 	font-size: 28px;
-	margin-left: 180px;
+	margin-left: 30px;
 	font-family: 'Space Mono', monospace;
 	font-weight: 700;
 	color: #f4c542;
@@ -207,7 +281,20 @@ span:hover
 
 @media all and (min-width: 768px) 
 {
+	span
+	{
+		margin-left: 180px;
+	}
+
+	span:hover
+	{
+		margin-left: 180px;
+	}
   
+  .question
+  	{
+  		margin-top: 10px;
+  	}
 
   .leftSideHigh
 	{
@@ -224,7 +311,7 @@ span:hover
 		background-image: url(img/back.jpg);
 		background-repeat:no-repeat;
 	    background-size:auto;
-	    background-position:center;
+	    background-position: right 50%;
 	}
 
 	#resign
@@ -302,6 +389,9 @@ margin: 0 !important;
 }
 .footer
 {
+	text-align: center;
+	line-height: 100px;
+	
 	/* IE10+ */ 
 background-image: -ms-linear-gradient(bottom, #090726 0%, #02459A 100%);
 
@@ -321,8 +411,6 @@ background-image: -webkit-linear-gradient(bottom, #090726 0%, #02459A 100%);
 background-image: linear-gradient(to top, #090726 0%, #02459A 100%);
 	min-height: 100px;
 	color: #FFFFFF;
-
-
 }
 
 .headmobile 
