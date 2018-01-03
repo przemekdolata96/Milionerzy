@@ -1,3 +1,7 @@
+<?php 
+	session_name("mysession"); 
+	session_start();	
+ ?>
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -28,7 +32,22 @@
 				<!-- zmienic pozycje butonow   -->
 					
 				<div class="container ">
-					<div  class="headdesk"><span id="startButton" >START</span><span id="restartButton">RESTART</span></div><!-- <div class="headdesk"><span id="startButton" onclick="insertQuestion(question,answerA,answerB,answerC,answerD)">START</span><span>RESTART</span></div> -->
+					<div  class="headdesk">
+						<span id="startButton" >START</span>
+						<span id="restartButton">RESTART</span>
+						<?php if (!isset($_SESSION['login'])) { ?>
+							<a href="login.php"><span id="loginButton">ZALOGUJ</span></a>
+						<?php } ?>
+						<?php if (isset($_SESSION['login'])) { ?>
+							<a href="login.php"><span id="loginButton">WYLOGUJ</span></a>
+						<?php } ?>
+						<?php if (isset($_SESSION['login'])) { ?>
+							<a href="insertquestion.php"><span id="loginButton">DODAJ PYTANIE</span></a>
+						<?php } ?>
+						<?php if (isset($_SESSION['login'])) { ?>
+							<a href="results.php"><span id="loginButton">RANKING</span></a>
+						<?php } ?>
+					</div><!-- <div class="headdesk"><span id="startButton" onclick="insertQuestion(question,answerA,answerB,answerC,answerD)">START</span><span>RESTART</span></div> -->
 				</div>
 	
 				<!-- <div class="container hidden-lg hidden-md hidden-sm ">

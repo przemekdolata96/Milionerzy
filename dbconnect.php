@@ -9,11 +9,11 @@
 	
 
 		$connection = mysqli_connect($host, $user, $password, $database);	
- 
+		
 /*Komunikat o błędzie w przypadku problemów z połączeniem*/
 if (mysqli_connect_errno()) 
 {
-   /* echo 'Błąd';*/
+    echo 'Błąd';
     exit;   
 }
 else {

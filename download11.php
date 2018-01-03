@@ -2,8 +2,12 @@
 	header("application/json; charset=utf-8");
 
 	require_once("dbconnect.php");
+	$queryRandom="SELECT COUNT(id) FROM pytania WHERE questionNumber=11";
+	$result=mysqli_query($connection,$queryRandom);
+	$resultString = mysqli_fetch_assoc($result);
+	$questionOnLevelNumber=(int)implode($resultString);
 
-	$random=0;//second parameter is depends on nuber of question in DB
+	$random=rand(0,$questionOnLevelNumber-1);//second parameter is depends on nuber of question in DB
 	$query_container="SELECT * FROM pytania WHERE questionNumber=11 AND random=$random";
 	/*$query_add="INSERT INTO pytania (question,answerA,answerB,answerC,answerD,correct) VALUES ('Najlepszy język programowania to:','Java','C++','Python','C#','a')";
 */
