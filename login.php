@@ -34,7 +34,8 @@
 				$_SESSION['login']="login";
 			    header("Location: index.php");
 			} else {
-				echo "bad login data";
+				$emailError='nieprawidłowe dane';
+				
 			}
 		}
 
@@ -88,6 +89,9 @@
    <div class="row">/</div>
   <a href="register.php"><div class="form-row justify-content-center">
   		Zarejestruj się
+  	</div></a>
+  	<a href="http://localhost/milionerzy"><div class="form-row justify-content-center">
+  		Strona główna
   	</div></a>
 </form>
 	

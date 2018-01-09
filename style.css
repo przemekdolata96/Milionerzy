@@ -16,6 +16,7 @@ body
 
 .question
 {
+	font-size: 20px;
 	opacity: 0.9;
 	color: #ffffff;
 	/* IE10+ */ 
@@ -46,6 +47,7 @@ background-image: radial-gradient(ellipse farthest-side at center, #035ABB 0%, #
 
 .answer
 {
+	font-size: 20px;
 	opacity: 0.9;
 	color: #ffffff;
 	/* IE10+ */ 
@@ -75,6 +77,7 @@ background-image: linear-gradient(to bottom, #0B1417 0%, #0353AD 46%, #035ABB 50
 
 .answer:hover
 {
+	font-size: 20px;
 	color: #ffffff;
 	/* IE10+ */ 
 background-image: -ms-radial-gradient(center, ellipse farthest-side, #EB7409 0%, #C76207 46%, #BD5D07 50%, #B35807 53%, #9C4D05 76%, #854205 87%, #5E2E04 100%);
@@ -107,6 +110,7 @@ background-image: radial-gradient(ellipse farthest-side at center, #EB7409 0%, #
 
 .answerhover
 {
+	font-size: 20px;
 	color: #ffffff;
 	/* IE10+ */ 
 background-image: -ms-radial-gradient(center, ellipse farthest-side, #EB7409 0%, #C76207 46%, #BD5D07 50%, #B35807 53%, #9C4D05 76%, #854205 87%, #5E2E04 100%);
@@ -148,6 +152,7 @@ background-image: radial-gradient(ellipse farthest-side at center, #EB7409 0%, #
 
 .goodanswer
 {
+	font-size: 20px;
 	color: #ffffff;
 	/* IE10+ */ 
 background-image: -ms-radial-gradient(center, ellipse farthest-side, #1B8C18 0%, #21A81C 46%, #1F9C1A 50%, #1C8F19 53%, #1C8F19 76%, #197D14 87%, #136311 100%);
@@ -207,8 +212,8 @@ background-image: radial-gradient(ellipse closest-corner at center, #0348A1 0%, 
 .amount
 {
 	padding: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	font-weight: 700;
 	color: #dddddd;
 	letter-spacing: 2px;
@@ -283,12 +288,12 @@ span:hover
 {
 	span
 	{
-		margin-left: 180px;
+		margin-left: 40px;
 	}
 
 	span:hover
 	{
-		margin-left: 180px;
+		margin-left: 40px;
 	}
   
   .question
@@ -298,7 +303,7 @@ span:hover
 
   .leftSideHigh
 	{
-		margin-top: 650px;
+		margin-top: 530px;
 	}
 
 	.rightSideHigh
@@ -316,10 +321,24 @@ span:hover
 
 	#resign
 	{
+		
+		font-size: 28px;
+		margin-left: 30px;
+		font-family: 'Space Mono', monospace;
+		font-weight: 700;
+		color: #ffffff;
+	    letter-spacing: .05em;
+	    text-shadow: 
+      1px 1px 0px #d5d5d5, 
+      2px 2px 0px rgba(0, 0, 0, 0.2);
 		margin-top: 20px;
 		margin-bottom: 20px;
 		padding-top: 5px;
 		padding-bottom: 5px;
+	}
+	#resign:hover
+	{
+		color: #f4c542;
 	}
 
 
@@ -390,7 +409,7 @@ margin: 0 !important;
 .footer
 {
 	text-align: center;
-	line-height: 100px;
+	line-height: 59px;
 	
 	/* IE10+ */ 
 background-image: -ms-linear-gradient(bottom, #090726 0%, #02459A 100%);
@@ -409,7 +428,7 @@ background-image: -webkit-linear-gradient(bottom, #090726 0%, #02459A 100%);
 
 /* W3C Markup */ 
 background-image: linear-gradient(to top, #090726 0%, #02459A 100%);
-	min-height: 100px;
+	min-height: 59px;
 	color: #FFFFFF;
 }
 

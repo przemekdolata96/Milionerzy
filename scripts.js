@@ -103,8 +103,18 @@ function writeScore()
 	$.post("writescore.php",{result:price});
 }
 
+function dbGameCounter() {
+	$.post("dbgamecounter.php");
+}
+
+function dbScoreCounter() {
+	$.post("dbscorecounter.php",{score: questionCounter-1});
+}
+
 function restartGame()
 {
+	dbScoreCounter();
+	dbGameCounter();
 	$('#answerA').attr("class","answer col-lg-5 col-md-5 col-sm-5")
 	$('#answerB').attr("class","answer col-lg-5 col-md-5 col-sm-5")
 	$('#answerC').attr("class","answer col-lg-5 col-md-5 col-sm-5")
@@ -194,6 +204,7 @@ function bindBouysAndResignButton()
 
 function gameWin()
 {
+	$.post("dbscorecounter.php",{score: 12});
 	writeScore();
 	document.getElementById('question').innerHTML="-";
 	document.getElementById('answerA').innerHTML="-";
@@ -276,6 +287,7 @@ function checkAnswer(answer)
 	}
 	else
 	{
+		dbScoreCounter();
 		writeScore();
 		document.getElementById('endGameMessage').innerHTML=endGameMessage;
 		var orange=setInterval(function(){ 
@@ -323,6 +335,7 @@ $(document).ready(function()
 	$('#startButton').on('click touchstart',function()
 	{
 		/*$("startButton").prop('disabled', true);*/
+		dbGameCounter();
 		setAnswerButtons("checkAnswer('a')","checkAnswer('b')","checkAnswer('c')","checkAnswer('d')");
 		$("#restartButton").show();
 		$("#startButton").hide();

@@ -45,7 +45,10 @@
 							<a href="insertquestion.php"><span id="loginButton">DODAJ PYTANIE</span></a>
 						<?php } ?>
 						<?php if (isset($_SESSION['login'])) { ?>
-							<a href="results.php"><span id="loginButton">RANKING</span></a>
+							<a href="results.php"><span id="loginButton">WYNIKI</span></a>
+						<?php } ?>
+						<?php if (isset($_SESSION['login'])) { ?>
+							<a href="rank.php"><span id="loginButton">RANKING</span></a>
 						<?php } ?>
 					</div><!-- <div class="headdesk"><span id="startButton" onclick="insertQuestion(question,answerA,answerB,answerC,answerD)">START</span><span>RESTART</span></div> -->
 				</div>
@@ -212,16 +215,16 @@
 				</div><!-- /.modal -->
 				
 				<div class="row">
-					<div id="questionContainer" class="container col-lg-9 col-md-9 col-sm-9 text-center">
+					<div id="questionContainer" class="container col-lg-9 col-md-9 col-sm-9 text-center ">
 					 		
 	
 	
-							<div class="container leftSideHigh col-lg-9 col-md-9 col-sm-9">
+							<div class="container leftSideHigh col-lg-12 col-md-12 col-sm-12 ">
 					
 								<div id="question" class="question">-</div>
 							</div>
 					
-							<div class="container   col-lg-9 col-md-9 col-sm-9 text-center">
+							<div class="container   col-lg-12 col-md-12 col-sm-12 text-center">
 								<div onclick="" id="answerA" class="answer col-lg-5 col-md-5 col-sm-5 ">-</div>
 								<div  class="col-lg-2 col-md-2 col-sm-2"></div>
 								<div onclick="" id="answerB" class="answer col-lg-5 col-md-5 col-sm-5">-</div>
@@ -278,7 +281,7 @@
 			<footer>
 				<div class="row">
 					<div class="footer">
-						Milionerzy by Przemysław Dolata
+						Milionerzy &copy; 2018 Przemysław Dolata, Aleksander Górka
 					</div>
 				</div>			
 			</footer>

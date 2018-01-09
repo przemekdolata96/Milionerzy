@@ -7,12 +7,12 @@
 		header("Location: index.php");	
 	}
 	$idplayer=(int)$_SESSION['userid'];
-	$query="SELECT idgame,result FROM rezultaty WHERE idplayer=$idplayer";
+	$query="SELECT login,games,points FROM gracze ORDER BY points DESC";
 	/*$result=mysqli_query($connection,$query);
 	$resultString = mysqli_fetch_assoc($result);*/
 
 	$result = $connection->query($query);
-	$money=['500','1000','2000','5000','10000','20000','40000','75000','125000','250000','500000','1000000'];
+
 
 	/*if ($result->num_rows <= 0) {
 	    // output data of each row
@@ -41,16 +41,18 @@
 	  <thead>
 	    <tr>
 	      <th scope="col">#</th>
-	      <th scope="col">Numer gry w systemie</th>
-	      <th scope="col">Wynik</th>
+	      <th scope="col">Nazwa gracza</th>
+	      <th scope="col">Liczba rozegranych gier</th>
+	      <th scope="col">Punkty</th>
 	    </tr>
 	  </thead>
 	  <tbody>
 	  	<?php $id=1; while($row = $result->fetch_assoc()) {?>
 		  	 <tr>
 		      <th scope="row"><?php echo $id++; ?></th>
-		      <td><?php echo $row["idgame"] ?></td>
-		      <td><?php echo $row["result"] ?></td>
+		      <td><?php echo $row["login"] ?></td>
+		      <td><?php echo $row["games"] ?></td>
+		      <td><?php echo $row["points"] ?></td>
 		    </tr>
 		 <?php }?>
 	  </tbody>
